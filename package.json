@@ -1,0 +1,10 @@
+{
+  "name": "lanhai-release-page",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "check": "node --check app.js && node --check server.js",
+    "test": "node scripts/static-check.js"
+  }
+}
