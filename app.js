@@ -1,4 +1,4 @@
-const REGISTER_URL = "https://app.lanhai.in:7779/#/register?code=cBg4CIga";
+const REGISTER_URL = "https://lhweb.jjjxgc.com/#/register?code=TpQoxN5S";
 
 const dictionaries = {
   zh: {
