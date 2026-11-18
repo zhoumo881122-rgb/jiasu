@@ -1,4 +1,7 @@
-const REGISTER_URL = "https://lhweb.jjjxgc.com/#/register?code=TpQoxN5S";
+const ENTRY_URLS = {
+  official: "https://lhweb.jjjxgc.com/#/register?code=TpQoxN5S",
+  backup: "https://app.lanhai.in:7779/#/register?code=TpQoxN5S"
+};
 
 const dictionaries = {
   zh: {
@@ -81,8 +84,8 @@ function applyLanguage() {
     if (value) node.textContent = value;
   });
 
-  document.querySelectorAll(".entry-link").forEach((link) => {
-    link.href = REGISTER_URL;
+  document.querySelectorAll(".entry-link[data-entry]").forEach((link) => {
+    link.href = ENTRY_URLS[link.dataset.entry];
   });
 
   if (els.languageToggle) {
